@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Scientist @ <a href='https://lumalabs.ai'>Luma AI</a> • Previously <a href='https://scale.com'>Scale AI</a> / founding eng @ Advex / <a href='https://www.kitware.com'>Kitware</a> / <a href='https://www.jhu.edu'>JHU</a>
+subtitle: Research Scientist @ <a href='https://lumalabs.ai'>Luma AI</a> • Previously <a href='https://scale.com'>Scale AI</a> / founding eng @ Advex / <a href='https://www.kitware.com'>Kitware</a> / co-founder @ MoTrack Therapy / <a href='https://www.jhu.edu'>JHU</a>
 
 profile:
   align: right
