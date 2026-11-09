@@ -1,0 +1,78 @@
+---
+---
+
+@inproceedings{pikus2026zap,
+  abbr      = {CoRL},
+  title     = {Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics},
+  author    = {Pikus, Benjamin and Saunders, Daniel and Mironenco, Mircea and Mohammadi, Salman and Mathew, Mathew and Zhu, Sirou and Makkar, Divya and Huang, Xuhua and Li, Qinbo and Narasimhaswamy, Supreeth and Cen, Siyuan and Xu, Dejia and Buch, Shyamal and Neff, Thomas},
+  booktitle = {Conference on Robot Learning (CoRL), Late-Breaking Results},
+  year      = {2026},
+  arxiv     = {2610.35817},
+  website   = {https://zero-real.github.io/},
+  preview   = {zap.jpg},
+  bibtex_show = {true},
+  selected  = {true},
+  abstract  = {Frontier models such as GPT-6 Astra now directly control robots and can generalize better than vision-language-action models (VLAs). We argue that this ability could arise from two distinct, composable skills: semantic reasoning, to understand what a task asks for in a scene, and motion control, to move the robot to do it. We show that small open VLMs are already capable of the first and mainly lack the second. We introduce Zero-real Agent Policy (ZAP), a recipe that teaches this missing motion skill, entirely in simulation on simple primitive tasks and from the model's own successes, with no frontier teacher or distillation and no real-world robot data. ZAP reaches 96.7% success on real-world tasks, matching GPT-6 Astra in our harness while running 3x faster and 17x cheaper, and 74.0% on a bimanual adaptation of RoboLab-120, on par with GPT-6 Astra's 72.2%. ZAP also generalizes to new objects, goals, and strategies, and in simulation to a robot embodiment on which it never trained.}
+}
+
+@inproceedings{pikus2025hard,
+  abbr      = {NeurIPS-W},
+  title     = {Hard Examples Are All You Need: Maximizing GRPO Post-Training Under Annotation Budgets},
+  author    = {Pikus, Benjamin and Tiwari, Pratyush Ranjan and Ye, Burton},
+  booktitle = {NeurIPS 2025 Workshop on Efficient Reasoning},
+  year      = {2025},
+  arxiv     = {2508.14094},
+  preview   = {grpo_hard.jpg},
+  bibtex_show = {true},
+  selected  = {true},
+  abstract  = {Collecting high-quality training examples for language model fine-tuning is expensive, with practical budgets limiting the amount of data that can be procured. We investigate whether example difficulty affects GRPO training effectiveness by comparing selection strategies (easy, medium, hard, random) across multiple models and reasoning tasks. Training on the hardest 10% of examples (those where the base model fails most often) yields dramatic performance gains up to 47%, while easy examples produce minimal improvements of 3-15%. This occurs because GRPO requires outcome variance to generate learning signals; hard examples maintain mixed success/failure outcomes throughout training while easy examples quickly converge to consistent success, eliminating learning opportunities. Moreover, models trained on hard examples show superior out-of-distribution generalization, with only hard-trained models achieving meaningful gains on the AIME2025 benchmark. Our findings provide clear guidance: when budget-constrained, prioritize collecting and annotating examples where your base model struggles, as these drive nearly all learning value in GRPO fine-tuning.}
+}
+
+@article{trabucco2025conditioning,
+  abbr      = {arXiv},
+  title     = {Understanding Trade offs When Conditioning Synthetic Data},
+  author    = {Trabucco, Brandon and Wani, Qasim and Pikus, Benjamin and Sharma, Vasu},
+  journal   = {arXiv preprint arXiv:2507.02217},
+  year      = {2025},
+  arxiv     = {2507.02217},
+  preview   = {synth_cond.jpg},
+  bibtex_show = {true},
+  abstract  = {Learning robust object detectors from only a handful of images is a critical challenge in industrial vision systems, where collecting high quality training data can take months. Synthetic data has emerged as a key solution for data efficient visual inspection and pick and place robotics. Diffusion models promise a step change because they can generate high quality images in minutes, yet precise control, especially in low data regimes, remains difficult. We study eighty diverse visual concepts drawn from four standard object detection benchmarks and compare two conditioning strategies: prompt based and layout based. When the set of conditioning cues is narrow, prompt conditioning yields higher quality synthetic data; as diversity grows, layout conditioning becomes superior. When layout cues match the full training distribution, synthetic data raises mean average precision by an average of thirty four percent and by as much as one hundred seventy seven percent compared with using real data alone.}
+}
+
+@inproceedings{levine2024abet,
+  abbr      = {NeurIPS-W},
+  title     = {Out-of-Distribution Detection \& Applications With Ablated Learned Temperature Energy},
+  author    = {LeVine, Will and Pikus, Benjamin and Phillips, Jacob and Norman, Berk and Amat Gil, Fernando and Hendryx, Sean},
+  booktitle = {NeurIPS 2024 Workshop on Bayesian Decision-making and Uncertainty},
+  year      = {2024},
+  arxiv     = {2401.12129},
+  preview   = {abet.jpg},
+  bibtex_show = {true},
+  abstract  = {We introduce Ablated Learned Temperature Energy (AbeT), an out-of-distribution detection method which lowers the False Positive Rate at 95% True Positive Rate (FPR@95) by 43.43% in classification compared to state of the art without training networks in multiple stages or requiring hyperparameters or test-time backward passes. We additionally provide empirical insights as to why our model learns to distinguish between in-distribution and OOD samples while only being explicitly trained on ID samples. Lastly, we show the efficacy of our method in identifying predicted bounding boxes and pixels corresponding to OOD objects in object detection and semantic segmentation, respectively.}
+}
+
+@inproceedings{levine2023reward,
+  abbr      = {AAAI-W},
+  title     = {A Baseline Analysis of Reward Models' Ability To Accurately Analyze Foundation Models Under Distribution Shift},
+  author    = {LeVine, Will and Pikus, Benjamin and Chen, Anthony and Hendryx, Sean},
+  booktitle = {AAAI 2024 Workshop},
+  year      = {2024},
+  arxiv     = {2311.14743},
+  preview   = {rm_shift.jpg},
+  bibtex_show = {true},
+  selected  = {true},
+  abstract  = {Reinforcement Learning with Human Feedback (RLHF) involves training a reward model to capture desired behaviors, which is then used to align LLMs. These reward models are additionally used at inference-time to estimate LLM responses' adherence to those desired behaviors. However, there is little work measuring how robust these reward models are to distribution shifts. In this work, we evaluate how reward model performance, measured via accuracy and calibration, is affected by distribution shift. We show novel calibration patterns and accuracy drops due to OOD prompts and responses, and that the reward model is more sensitive to shifts in responses than prompts. Additionally, we adapt an OOD detection technique commonly used in classification to the reward model setting to detect these distribution shifts in prompts and responses.}
+}
+
+@inproceedings{levine2023calibration,
+  abbr      = {ICLR-W},
+  title     = {Enabling Calibration In The Zero-Shot Inference of Large Vision-Language Models},
+  author    = {LeVine, Will and Pikus, Benjamin and Raja, Pranav and Amat Gil, Fernando},
+  booktitle = {ICLR 2023 Workshop on Trustworthy ML},
+  year      = {2023},
+  arxiv     = {2303.12748},
+  preview   = {clip_calib.jpg},
+  bibtex_show = {true},
+  abstract  = {Calibration of deep learning models is crucial to their trustworthiness and safe usage. However, there has yet to be a comprehensive study of the calibration of vision-language models that are used for zero-shot inference, like CLIP. We measure calibration across relevant variables like prompt, dataset, and architecture, and find that zero-shot inference with CLIP is miscalibrated. Furthermore, we propose a modified version of temperature scaling that is aligned with the common use cases of CLIP as a zero-shot inference model, and show that a single learned temperature generalizes for each specific CLIP model across inference dataset and prompt choice.}
+}
